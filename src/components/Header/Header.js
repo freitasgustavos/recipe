@@ -60,7 +60,7 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = (
-    <img className={classes.title} src={brand} width={170} />
+    <img className={classes.title} src={brand} width={170} alt="logo" />
   );
   return (
     <AppBar className={appBarClasses}>

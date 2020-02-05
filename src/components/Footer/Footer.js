@@ -52,16 +52,14 @@ export default function Footer(props) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , feito com{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          &copy; {1900 + new Date().getYear()},{" "}
           <a
             href="https://gustavofreitas.dev"
             className={aClasses}
             target="_blank"
           >
             gustavofreitas.dev
-          </a>{" "}
-          para uma web melhor.
+          </a>
         </div>
       </div>
     </footer>

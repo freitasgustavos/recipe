@@ -1,15 +1,14 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Box from "@material-ui/core/Box";
+import Hidden from "@material-ui/core/Hidden";
 
 // @material-ui/icons
-import Delete from "@material-ui/icons/Delete";
-import ThumbUp from "@material-ui/icons/ThumbUp";
-import MonetizationOn from "@material-ui/icons/MonetizationOn";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import InfoArea from "components/InfoArea/InfoArea.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 
@@ -35,33 +34,56 @@ export default function ProductSection() {
       </GridContainer>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Colabore na diminuição de lixo"
-              description="No mundo na economia de água utilizada para a produção de novas peças que não utilizam materiais recicláveis, e na diminuição do tamanho das ilhas de lixo encontrada em nosso oceano pacífico. Assim, contribuímos para um futuro melhor"
-              icon={Delete}
-              iconColor="danger"
-              vertical
-            />
+          <GridItem xs={12} sm={12} md={6}>
+            <Box color="text.primary">
+              <h2>Colabore na diminuição de lixo no mundo</h2>
+            </Box>
+            <Box color="text.secondary" textAlign="right" fontSize={17}>
+              na economia de água utilizada para a produção de novas peças que
+              não utilizam materiais recicláveis, e na diminuição do tamanho das
+              ilhas de lixo encontrada em nosso oceano pacífico. Assim,
+              contribuímos para um futuro melhor
+            </Box>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Ajudando o instituto ipê"
-              description="Você garante um futuro melhor para os jovens que não possuem condições para cursar a faculdade e aprender uma nova profissão"
-              icon={ThumbUp}
-              iconColor="info"
-              vertical
-            />
+          <Hidden smDown>
+            <GridItem md={6}>
+              <img src={require("assets/img/artes.png")} alt="" mb={15} />
+            </GridItem>
+          </Hidden>
+        </GridContainer>
+        <GridContainer>
+          <Hidden smDown>
+            <GridItem md={6}>
+              <img src={require("assets/img/arte.png")} alt="" mb={15} />
+            </GridItem>
+          </Hidden>
+          <GridItem xs={12} sm={12} md={6}>
+            <Box color="text.primary">
+              <h2>Ajudando o Instituto Ipê</h2>
+            </Box>
+            <Box color="text.secondary" textAlign="left" fontSize={17}>
+              você garante um futuro melhor para os jovens que não possuem
+              condições para cursar a faculdade e aprender uma nova profissão
+            </Box>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="O Ipê Reais"
-              description="É a nossa moeda de agradecimento pelo apoio de vocês. Ela pode ser usada na troca de móveis e brinquedos disponíveis no nosso ateliê como produto de troca ou pode ser trocada pela coleta seletiva destes materiais"
-              icon={MonetizationOn}
-              iconColor="success"
-              vertical
-            />
+        </GridContainer>
+        <GridContainer>
+          <GridItem xs={12} sm={12} md={6}>
+            <Box color="text.primary">
+              <h2>O Ipê reais</h2>
+            </Box>
+            <Box color="text.secondary" textAlign="right" fontSize={17}>
+              é a nossa moeda de agradecimento pelo apoio de vocês. Ela pode ser
+              usada na troca de móveis e brinquedos disponíveis no nosso ateliê
+              como produto de troca ou pode ser trocada pela coleta seletiva
+              destes materiais
+            </Box>
           </GridItem>
+          <Hidden smDown>
+            <GridItem md={6}>
+              <img src={require("assets/img/artes.png")} alt="" />
+            </GridItem>
+          </Hidden>
         </GridContainer>
       </div>
     </div>

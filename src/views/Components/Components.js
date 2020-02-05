@@ -54,7 +54,6 @@ export default function Components(props) {
             <GridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>Você planta, todos colhem</h1>
-                <h3 className={classes.subtitle}></h3>
               </div>
             </GridItem>
           </GridContainer>
