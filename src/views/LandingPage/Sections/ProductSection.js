@@ -19,7 +19,7 @@ export default function ProductSection() {
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
-        <GridItem xs={12} sm={12} md={8}>
+        <GridItem xs={12} sm={12} md={12}>
           <h2 className={classes.title}>Venha promover a Cultura Verde</h2>
           <h5 className={classes.description}>
             O Recipê é uma plataforma que premia pessoas com atitudes
@@ -32,17 +32,17 @@ export default function ProductSection() {
           </h5>
         </GridItem>
       </GridContainer>
-      <div>
-        <GridContainer>
+      <div className={classes.product}>
+        <GridContainer className={classes.itens}>
           <GridItem xs={12} sm={12} md={6}>
             <Box color="text.primary">
               <h2>Colabore na diminuição de lixo no mundo</h2>
             </Box>
-            <Box color="text.secondary" textAlign="right" fontSize={17}>
-              na economia de água utilizada para a produção de novas peças que
-              não utilizam materiais recicláveis, e na diminuição do tamanho das
-              ilhas de lixo encontrada em nosso oceano pacífico. Assim,
-              contribuímos para um futuro melhor
+            <Box color="text.secondary" textAlign="center" fontSize={17}>
+              na economia de <b>água</b> utilizada para a produção de novas
+              peças que não utilizam materiais <b>recicláveis</b>, e na
+              diminuição do tamanho das ilhas de <b>lixo</b> encontrada em nosso
+              oceano pacífico. Assim, contribuímos para um futuro melhor
             </Box>
           </GridItem>
           <Hidden smDown>
@@ -51,7 +51,7 @@ export default function ProductSection() {
             </GridItem>
           </Hidden>
         </GridContainer>
-        <GridContainer>
+        <GridContainer className={classes.itens}>
           <Hidden smDown>
             <GridItem md={6}>
               <img src={require("assets/img/arte.png")} alt="" mb={15} />
@@ -61,22 +61,23 @@ export default function ProductSection() {
             <Box color="text.primary">
               <h2>Ajudando o Instituto Ipê</h2>
             </Box>
-            <Box color="text.secondary" textAlign="left" fontSize={17}>
-              você garante um futuro melhor para os jovens que não possuem
-              condições para cursar a faculdade e aprender uma nova profissão
+            <Box color="text.secondary" textAlign="center" fontSize={17}>
+              você garante um <b>futuro</b> melhor para os <b>jovens</b> que não
+              possuem condições para cursar a faculdade e aprender uma nova{" "}
+              <b>profissão</b>
             </Box>
           </GridItem>
         </GridContainer>
-        <GridContainer>
+        <GridContainer className={classes.itens}>
           <GridItem xs={12} sm={12} md={6}>
             <Box color="text.primary">
               <h2>O Ipê reais</h2>
             </Box>
-            <Box color="text.secondary" textAlign="right" fontSize={17}>
-              é a nossa moeda de agradecimento pelo apoio de vocês. Ela pode ser
-              usada na troca de móveis e brinquedos disponíveis no nosso ateliê
-              como produto de troca ou pode ser trocada pela coleta seletiva
-              destes materiais
+            <Box color="text.secondary" textAlign="center" fontSize={17}>
+              é a nossa <b>moeda</b> de agradecimento pelo apoio de vocês. Ela
+              pode ser usada na troca de <b>móveis</b> e <b>brinquedos</b>{" "}
+              disponíveis no nosso ateliê como produto de troca ou pode ser
+              trocada pela coleta seletiva destes materiais
             </Box>
           </GridItem>
           <Hidden smDown>

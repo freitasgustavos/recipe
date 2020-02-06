@@ -2,11 +2,7 @@ import { title } from "assets/jss/material-kit-react.js";
 
 const productStyle = {
   section: {
-    padding: "50px 0",
     textAlign: "center"
-  },
-  product: {
-    marginTop: "30px"
   },
   title: {
     ...title,
@@ -25,6 +21,9 @@ const productStyle = {
     "& b": {
       color: "#437945"
     }
+  },
+  media: {
+    height: 140
   }
 };
 
