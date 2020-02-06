@@ -43,6 +43,7 @@ export default function WhoSection() {
               height="300"
               src="https://www.youtube.com/embed/N0R8A0x1O4A"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              title="Tv Paranaíba"
             ></iframe>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
@@ -69,6 +70,7 @@ export default function WhoSection() {
               height="300"
               src="https://www.youtube.com/embed/zigCqUpqdbQ"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              title="Band"
             ></iframe>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
