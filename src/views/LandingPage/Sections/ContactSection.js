@@ -14,7 +14,7 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/cont
 
 const useStyles = makeStyles(styles);
 
-export default function WorkSection() {
+export default function ContactSection() {
   const classes = useStyles();
   return (
     <div className={classes.section}>

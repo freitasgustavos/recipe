@@ -1,4 +1,5 @@
 import { title, container } from "assets/jss/material-kit-react.js";
+import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
 const productStyle = {
   section: {
@@ -12,6 +13,7 @@ const productStyle = {
     minHeight: "32px",
     textDecoration: "none"
   },
+  ...imagesStyle,
   description: {
     color: "#999",
     fontSize: "1.3rem"

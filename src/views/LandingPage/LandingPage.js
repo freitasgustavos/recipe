@@ -19,7 +19,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 // import ProductSection from "./Sections/ProductSection.js";
 import ProjectSection from "./Sections/ProjectSection.js";
-import TeamSection from "./Sections/TeamSection.js";
+import BlogSection from "./Sections/BlogSection.js";
 import ProductSection from "./Sections/ProductSection.js";
 import ContactSection from "./Sections/ContactSection.js";
 import WhoSection from "./Sections/WhoSection.js";
@@ -59,7 +59,7 @@ export default function LandingPage(props) {
           <ProjectSection />
           <WhoSection />
           <ProductSection />
-          <TeamSection />
+          <BlogSection />
           <ContactSection />
         </div>
       </div>

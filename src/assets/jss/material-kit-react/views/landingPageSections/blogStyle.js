@@ -1,9 +1,8 @@
 import { cardTitle, title } from "assets/jss/material-kit-react.js";
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
-const teamStyle = {
+const blogStyle = {
   section: {
-    padding: "70px 0",
     textAlign: "center"
   },
   title: {
@@ -17,6 +16,16 @@ const teamStyle = {
   itemGrid: {
     marginLeft: "auto",
     marginRight: "auto"
+  },
+  imgBlog: {
+    maxHeight: "250px"
+  },
+  subTitle: {
+    marginTop: "-30px",
+    ...title
+  },
+  resume: {
+    textAlign: "left"
   },
   cardTitle,
   smallTitle: {
@@ -40,8 +49,22 @@ const teamStyle = {
     color: "#999"
   },
   margin5: {
-    margin: "5px"
+    margin: "20px",
+    textAlign: "left",
+    textTransform: "uppercase"
+  },
+  cardHidden: {
+    opacity: "0",
+    transform: "translate3d(0, -60px, 0)"
+  },
+  cardHeader: {
+    width: "auto",
+    textAlign: "center",
+    marginLeft: "20px",
+    marginRight: "20px",
+    marginTop: "-40px",
+    padding: "20px 0"
   }
 };
 
-export default teamStyle;
+export default blogStyle;

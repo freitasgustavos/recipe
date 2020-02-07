@@ -1,6 +1,6 @@
 import { title } from "assets/jss/material-kit-react.js";
 
-const productStyle = {
+const projectStyle = {
   section: {
     padding: "50px 0",
     textAlign: "center"
@@ -28,4 +28,4 @@ const productStyle = {
   }
 };
 
-export default productStyle;
+export default projectStyle;

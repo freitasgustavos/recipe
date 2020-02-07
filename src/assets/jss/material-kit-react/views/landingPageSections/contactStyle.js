@@ -1,8 +1,8 @@
 import { title } from "assets/jss/material-kit-react.js";
 
-const workStyle = {
+const contactStyle = {
   section: {
-    padding: "70px 0"
+    padding: "10px 0"
   },
   title: {
     ...title,
@@ -25,4 +25,4 @@ const workStyle = {
   }
 };
 
-export default workStyle;
+export default contactStyle;

@@ -34,7 +34,7 @@ export default function WhoSection() {
           </h5>
         </GridItem>
       </GridContainer>
-      <GridContainer justify="center">
+      <GridContainer justify="center" spacing={3}>
         <GridItem xs={12} sm={12} md={6}>
           <Card>
             <iframe

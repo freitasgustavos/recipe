@@ -1,6 +1,6 @@
 import { title } from "assets/jss/material-kit-react.js";
 
-const productStyle = {
+const whoStyle = {
   section: {
     textAlign: "center"
   },
@@ -27,4 +27,4 @@ const productStyle = {
   }
 };
 
-export default productStyle;
+export default whoStyle;
