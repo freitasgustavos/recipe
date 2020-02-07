@@ -3,7 +3,7 @@ import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
 const productStyle = {
   section: {
-    padding: "70px 0",
+    padding: "10px 0",
     textAlign: "center"
   },
   title: {
