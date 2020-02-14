@@ -10,6 +10,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
+
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import Info from "components/Typography/Info.js";
@@ -46,6 +47,7 @@ export default function BlogSection() {
                   </p>
                 </Info>
               </CardHeader>
+
               <CardBody>
                 <h3 className={classes.subTitle}>Titulo do post</h3>
                 <p className={classes.resume}>
