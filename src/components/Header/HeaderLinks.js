@@ -10,7 +10,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Hidden from "@material-ui/core/Hidden";
 
 // @material-ui/icons
-import { MeetingRoom } from "@material-ui/icons";
+import { MeetingRoom, HomeOutlined, WebOutlined, AssignmentOutlined } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -25,40 +25,28 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Nos siga no Facebook"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
+        <Button
+          color="transparent"
+          className={classes.navLink}
         >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
-            <Hidden mdUp>Nos siga no Facebook</Hidden>
-          </Button>
-        </Tooltip>
+          <HomeOutlined className={classes.icons} /> Início
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Siga-nos no Instagram"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
+        <Button
+          color="transparent"
+          className={classes.navLink}
         >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
-            <Hidden mdUp>Siga-nos no Instagram</Hidden>
-          </Button>
-        </Tooltip>
+          <WebOutlined className={classes.icons} /> Blog
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          color="transparent"
+          className={classes.navLink}
+        >
+          <AssignmentOutlined className={classes.icons} /> Cadastrar
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
