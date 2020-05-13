@@ -20,6 +20,7 @@ const useStyles = makeStyles(styles);
 export default function Header(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [widthLogo, setWidthLogo] = React.useState(200);
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener("scroll", headerColorChange);
@@ -43,6 +44,7 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+      setWidthLogo(130);
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -50,6 +52,7 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+      setWidthLogo(200);
     }
   };
   const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
@@ -60,7 +63,7 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = (
-    <img className={classes.title} src={brand} width={170} alt="logo" />
+    <img className={classes.title} src={brand} width={widthLogo} alt="logo" />
   );
   return (
     <AppBar className={appBarClasses}>
